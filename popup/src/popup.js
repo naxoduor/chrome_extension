@@ -1,6 +1,8 @@
     /*global chrome*/
 
 import React, { useState, useEffect } from 'react';
+import './popup.css';
+
 
 const PopUp = () => {
   const [messages, setMessages] = useState([]);
@@ -43,7 +45,7 @@ if (loading) return <div>Loading...</div>;
         {messages.length > 0 ? (
           messages.map((msg, index) => <li key={index}>{msg.content}</li>)
         ) : (
-          <li>No new messages</li>
+          <li style={{ padding: '10px', margin: '10px' }}>No new messages</li>
         )}
       </ul>
     </div>

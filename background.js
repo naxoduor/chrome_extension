@@ -10,7 +10,7 @@
           timestamp: "2024-09-30T15:00:00Z",
           read: false,
         },
-              {
+        {
           id: "msg123",
           content: "Team meeting at 3 PM today 🙂",
           priority: "high",
